@@ -1,0 +1,53 @@
+/* Make the whole app container center content vertically and horizontally */
+.starting-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centers horizontally */
+  justify-content: flex-start; /* align top vertically */
+  min-height: 100vh;         /* full viewport height */
+  padding: 20px;
+  gap: 20px;                 /* spacing between button and comments */
+  background-color: #f0fff0; /* very light green background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container holding all comments */
+.starting-buttons > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center comments horizontally */
+  gap: 10px;
+  width: 100%;
+  max-width: 650px;    /* limits width on larger screens */
+}
+
+button {
+  background-color: #8fbc8f; /* muted medium green */
+  color: #f0f5f0;            /* very light greenish-white */
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 500;          /* medium weight, less bold */
+  font-size: 0.875rem;       /* smaller text */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(143, 188, 143, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #7aa97a; /* slightly darker muted green */
+  box-shadow: 0 4px 8px rgba(122, 169, 122, 0.5);
+}
+
+button:active {
+  background-color: #6a8b6a; /* darker muted green */
+  box-shadow: 0 1px 3px rgba(106, 139, 106, 0.7);
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: 2px solid #a3c9a3; /* lighter muted green outline */
+  outline-offset: 2px;
+}

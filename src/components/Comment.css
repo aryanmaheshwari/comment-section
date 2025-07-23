@@ -1,0 +1,37 @@
+.comment-container {
+    /* Remove fixed width */
+    /* width: 300px; */
+    max-width: 600px; /* max width limit */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+    /* Let width be based on content */
+    display: inline-block;  /* shrink to fit content */
+    vertical-align: top;    /* align nicely */
+}
+
+/* Parent comments */
+.comment-container.parent {
+    background-color: #d4edda;
+    border: 1px solid #28a745;
+    color: #155724;
+}
+
+/* Child comments indent and different shade */
+.comment-container.child {
+    background-color: #c3e6cb;
+    border: 1px solid #218838;
+    color: #155724;
+    margin-left: 30px; /* indent */
+    display: inline-block; /* shrink to fit content */
+    vertical-align: top;
+}
+
+/* Replies container */
+.comment-replies {
+    margin-top: 10px;
+}
